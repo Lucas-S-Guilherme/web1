@@ -1,0 +1,51 @@
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+
+/* Preparation time
+
+*/
+
+#preparationTime{
+ background-color: hsl(330, 100%, 98%);
+ border-radius: 20px;
+ padding: 10px;
+ font-family: 'Outfit';
+ font-weight: 400;
+}
+
+#titlePreparation{
+    color: hsl(332, 51%, 32%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Young_Serif';
+    src: url(../fonts/Young_Serif/YoungSerif-Regular.ttf);
+}
+
+
+h1{
+    font-family: 'Young_Serif';
+    font-weight: 400;
+    font-size: 38px;
+}
+
+article{
+    width: 650px;
+    height: 1200px;
+    margin: 0 auto;
+    padding: 30px 30px 30px 30px;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 20px;    
+    
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Outfit';
+}
