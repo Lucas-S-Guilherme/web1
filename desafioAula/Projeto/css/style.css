@@ -54,6 +54,10 @@ article{
     src: url(../fonts/Young_Serif/YoungSerif-Regular.ttf);
 }
 
+@media (min-width: 650px) {
+    
+  }
+
 
 h1{
     font-family: 'Young_Serif';
@@ -81,10 +85,15 @@ li{
 
 }
 
-.tabelaNutricao{
-    width: 300px;
+table{
+    width: 100%;
 }
 
-.tabelaNutri{
-    display: grid; column-gap: 20px
+td, tr{
+    text-align: left;
+}
+
+td, tr{
+    border-bottom: 1px solid black;
+    padding: 10px;
 }
