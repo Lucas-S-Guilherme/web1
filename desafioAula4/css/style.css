@@ -1,0 +1,55 @@
+/* 
+## Layout
+
+Os designs foram criados nas seguintes larguras:
+
+Área de trabalho: 1440px
+
+### Cópia do corpo
+
+- Tamanho da fonte: 15px
+
+### Fonte
+
+- Família: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Pesos: 400, 500, 700 
+
+*/
+
+:root{
+    --MagentaMuitoEscuro: hsl(300, 43%, 22%);
+    --RosaSuave: hsl(333, 80%, 67%);
+    --MagentaAcinzentadoEscuro: hsl(303, 10%, 53%);
+    --MagentaAcinzentadoClaro: hsl(300, 24%, 96%);
+    --Branco: hsl(0, 0%, 100%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#superior{
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    border: red solid 1px;
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+    border: purple solid 1px;   
+
+}
+
+#superior .direita{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+#inferior{
+    width: 1440px;
+}
