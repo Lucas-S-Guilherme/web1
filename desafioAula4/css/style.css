@@ -14,6 +14,10 @@ Os designs foram criados nas seguintes larguras:
 - Família: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
 - Pesos: 400, 500, 700 
 
+400 regular
+500 medium
+700 bold
+
 */
 
 :root{
@@ -24,9 +28,37 @@ Os designs foram criados nas seguintes larguras:
     --Branco: hsl(0, 0%, 100%);
 }
 
+@font-face {
+    font-family: League Spartan;
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: League Spartan;
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: League Spartan;
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Bold.ttf);
+    font-weight: 600;
+}
+
+body{
+    background-color: var(--Branco);
+    background-image: url(../images/bg-pattern-top-desktop.svg),  url(../images/bg-pattern-bottom-desktop.svg);
+    
+    background-repeat: no-repeat, no-repeat;
+    
+    
+}
+
 main{
     display: flex;
     flex-direction: column;
+    border: green solid 1px;
 }
 
 #superior{
@@ -44,12 +76,66 @@ main{
 
 }
 
+.textoPrincipal {
+    font-family: "League Spartan";
+    font-weight: 600;
+    font-size: 40px;
+    width: 300px;
+    line-height: 0.9;
+    color: var(--MagentaMuitoEscuro);
+    margin: 100px 20px 10px 100px;
+    
+}
+
+.textoSecundario {
+    font-family: "League Spartan";
+    font-weight: 400;
+    font-size: 16px;
+    width: 400px;
+    color: var(--MagentaAcinzentadoEscuro);
+    margin: 10px 20px 20px 100px;
+}
+
 #superior .direita{
     display: flex;
     flex-direction: column;
-    float: right;
+    width: 720px;
+    border: orange solid 1px; 
+    margin: 10px; 
 }
+
+.primeira, .segunda, .terceira {
+    background: var(--MagentaAcinzentadoClaro);
+    color: var(--MagentaMuitoEscuro);
+    font-family: League Spartan;
+    font-weight: 600;
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+    
+}
+
+.segunda {
+    margin: 10px 10px 10px 40px;
+}
+
+.terceira {
+    margin: 10px 10px 10px 80px;
+}
+
+.estrelas {
+    background-image: url(../images/icon-star.svg);
+    background-repeat: repeat-x;    
+    width: 85px;
+    margin: 0px 10px 0px 0px;
+}
+
+
 
 #inferior{
     width: 1440px;
+    border: brown solid 1px;
+    
 }
