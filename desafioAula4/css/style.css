@@ -48,17 +48,14 @@ Os designs foram criados nas seguintes larguras:
 
 body{
     background-color: var(--Branco);
-    background-image: url(../images/bg-pattern-top-desktop.svg),  url(../images/bg-pattern-bottom-desktop.svg);
-    
-    background-repeat: no-repeat, no-repeat;
-    
-    
+    background-image: url(../images/bg-pattern-top-desktop.svg),  url(../images/bg-pattern-bottom-desktop.svg);    
+    background-repeat: no-repeat, no-repeat;   
 }
 
 main{
     display: flex;
     flex-direction: column;
-    border: green solid 1px;
+    
     font-family: League Spartan;
 }
 
@@ -66,14 +63,14 @@ main{
     width: 1440px;
     display: flex;
     flex-direction: row;
-    border: red solid 1px;
+    
 }
 
 .esquerda{
     display: flex;
     flex-direction: column;
     width: 720px;
-    border: purple solid 1px;   
+    
 
 }
 
@@ -99,9 +96,8 @@ main{
 #superior .direita{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 720px;
-    border: orange solid 1px; 
+    align-items: start;
+    width: 720px;   
     
 }
 
@@ -119,15 +115,15 @@ main{
 }
 
 .primeira{
-    margin: 100px 10px 10px 10px;
+    margin: 100px 10px 10px 20px;
 }
 
 .segunda {
-    margin: 10px 10px 10px 40px;
+    margin: 10px 10px 10px 50px;
 }
 
 .terceira {
-    margin: 10px 10px 10px 80px;
+    margin: 10px 10px 10px 90px;
 }
 
 .estrelas {
@@ -142,15 +138,16 @@ main{
 
 #inferior{
     width: 1440px;
-    border: brown solid 1px;
-    align-items: center;
+    align-items: start;    
     font-size: 15px;
-    
+    display: flex;
+    flex-direction: row;   
+   
 }
 
 .container1{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     width: 360px;
     height: 225px;
     background: var(--MagentaMuitoEscuro);
@@ -158,21 +155,55 @@ main{
     margin: 10px 10px 10px 100px;
 }
 
-.foto1{
-    
+.fotoENome1{        
+    display: flex;  
+    flex-direction: row;  
+    color: var(--Branco);
+    margin: 30px 20px 20px 30px;    
 }
 
-
-.fotoENome1{    
-    background-image: url(../images/image-colton.jpg);
-    background-repeat: no-repeat;
+.nome{
+    font-weight: 600;
+}
+.nomestatus{
     display: flex;
-    color: var(--Branco);
-    margin: 10px;
-    width: 100px;
-    height: 100px;
+    flex-direction: column;
+    margin-left: 20px;
+
 }
 
 .frase{
     color: var(--Branco);
+    margin: 10px 20px 40px 30px;
+}
+
+.foto1 img{
+    width: 40px;
+    height: 40px;
+    clip-path: circle(50% at center);
+}
+
+
+.status{
+    color: var(--RosaSuave);
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 225px;
+    background: var(--MagentaMuitoEscuro);
+    border-radius: 10px;
+    margin: 30px 10px 10px 20px;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 225px;
+    background: var(--MagentaMuitoEscuro);
+    border-radius: 10px;
+    margin: 50px 10px 10px 20px;
 }
