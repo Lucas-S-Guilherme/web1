@@ -1,0 +1,25 @@
+
+
+/* 
+
+- Família: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Pesos: 600
+
+### Corpo, frases de chamariz
+
+- Família: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Pesos: 400, 700
+
+- Tamanho da fonte: 18px */
+
+:root{
+    --Rosa: hsl(322, 100%, 66%);
+    --CianoMuitoPalido: hsl(193, 100%, 96%);
+    --CianoMuitoEscuro: hsl(192, 100%, 9%);
+    --AzulAcinzentado: hsl(208, 11%, 55%);
+}
+
+section{
+    height: 70vh;
+    border: red solid 1px;
+}
