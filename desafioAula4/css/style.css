@@ -46,31 +46,41 @@ Os designs foram criados nas seguintes larguras:
     font-weight: 600;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     background-color: var(--Branco);
     background-image: url(../images/bg-pattern-top-desktop.svg),  url(../images/bg-pattern-bottom-desktop.svg);    
-    background-repeat: no-repeat, no-repeat;   
+    background-repeat: no-repeat, no-repeat;    
+    background-position: top, bottom;    
+    min-height: 100vh;
+    
 }
 
 main{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
     font-family: League Spartan;
+    min-height: 100vh;
+    position: relative;
 }
 
 #superior{
-    width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .esquerda{
     display: flex;
     flex-direction: column;
-    width: 720px;
-    
+    width: 50%;
+    align-items: center;   
 
 }
 
@@ -80,7 +90,8 @@ main{
     width: 300px;
     line-height: 0.9;
     color: var(--MagentaMuitoEscuro);
-    margin: 100px 20px 10px 100px;
+    margin: 100px 20px 10px -7%;
+    
     
 }
 
@@ -90,14 +101,14 @@ main{
     line-height: 1.5;
     width: 400px;
     color: var(--MagentaAcinzentadoEscuro);
-    margin: 10px 20px 20px 100px;
+    margin: 10px 20px 20px 6%;
 }
 
 #superior .direita{
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 720px;   
+    width: 50%;   
     
 }
 
@@ -137,11 +148,12 @@ main{
 
 
 #inferior{
-    width: 1440px;
-    align-items: start;    
+    width: 100%;       
     font-size: 15px;
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;  
+    align-items: center; 
+    justify-content: center; 
    
 }
 
@@ -152,7 +164,7 @@ main{
     height: 225px;
     background: var(--MagentaMuitoEscuro);
     border-radius: 10px;
-    margin: 10px 10px 10px 100px;
+    margin: 10px 10px 10px 10px;
 }
 
 .fotoENome1{        
@@ -207,3 +219,19 @@ main{
     border-radius: 10px;
     margin: 50px 10px 10px 20px;
 }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    align-items: end;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
