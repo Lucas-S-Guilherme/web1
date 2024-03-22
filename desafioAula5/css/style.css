@@ -11,15 +11,83 @@
 - Pesos: 400, 700
 
 - Tamanho da fonte: 18px */
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans/static/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans/static/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+
+
 
 :root{
     --Rosa: hsl(322, 100%, 66%);
     --CianoMuitoPalido: hsl(193, 100%, 96%);
     --CianoMuitoEscuro: hsl(192, 100%, 9%);
     --AzulAcinzentado: hsl(208, 11%, 55%);
+    --fonte-titulo: "Poppins", sans-serif;
+    
+}
+
+body{
+    font-family: "Open Sans";
+    font-size: 18px;
+    
 }
 
 section{
     height: 70vh;
     border: red solid 1px;
+}
+
+.containerPai{
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: var(--CianoMuitoPalido);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
+
+/* Flex containers em coluna*/
+
+/* Flex containers em linha*/
+.top-main{
+    display: flex; 
+    flex-direction: row;  
+}
+
+.top-main{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    width: 10rem;    
+    min-width: 16%;
+    max-width: 100%;
+}
+
+.top-main button{
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 2rem;
+    width: max-content;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
 }
