@@ -37,7 +37,9 @@
     --CianoMuitoPalido: hsl(193, 100%, 96%);
     --CianoMuitoEscuro: hsl(192, 100%, 9%);
     --AzulAcinzentado: hsl(208, 11%, 55%);
+    --sombraCaixa: -1px 0px 5px -2px hsl(208, 11%, 55%);
     --fonte-titulo: "Poppins", sans-serif;
+
     
 }
 
@@ -47,29 +49,33 @@ body{
     
 }
 
-section{
-    height: 70vh;
-    border: red solid 1px;
-}
-
-.containerPai{
+header {
     background-image: url(../images/bg-hero-desktop.svg);
-    background-color: var(--CianoMuitoPalido);
-    background-size: 100%;
+    background-color: var(--CianoMuitoPalido);     
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    
+    height: 75vh;    
 }
 
 /* Flex containers em coluna*/
-
-/* Flex containers em linha*/
-.top-main{
+header,
+.meioPagina section,
+.destaques {
     display: flex; 
-    flex-direction: row;  
+    flex-direction: column;  
 }
 
-.top-main{
+/* Flex containers em linha*/
+header nav,
+.meioPagina,
+.bloco-destaque
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+header nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
@@ -81,7 +87,7 @@ section{
     max-width: 100%;
 }
 
-.top-main button{
+nav button{
     border: none;
     border-radius: 25px;
     padding: 0.8rem 2rem;
@@ -90,4 +96,74 @@ section{
     cursor: pointer;
     font-weight: 700;
     font-size: 0.9rem;
+}
+
+
+
+.meioPagina {  
+    padding: 1rem;
+    height: 70%;
+    width: auto;
+    justify-content: space-between;
+    
+
+}
+
+.meioPagina h1{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.meioPagina section{
+    justify-content: center; 
+    border: green solid 1px;
+    width: 500px;
+}
+
+.imagemTela img {    
+    border: yellow solid 1px;  
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+    
+}
+
+.meioPagina section button {
+    border: none;
+    border-radius: 35px;
+    padding: 1.1rem 2rem;
+    width: 300px;
+    background-color: var(--Rosa);
+    color: white;    
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    align-self: center;
+}
+
+.destaques {
+    gap: 3rem;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 13.9rem;
+    position: relative;
+}
+
+.bloco-destaque{
+    background-color: var(--white);
+    box-shadow: var(--sombraCaixa);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 87%;
+    height: 70vh;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    gap: 3rem;
+}
+
+.imagem-destaque {
+    height: fit-content;
+    align-self: center;
 }
