@@ -45,7 +45,7 @@
 
 body{
     font-family: "Open Sans";
-    font-size: 18px;
+    font-size: 16px;
     
 }
 
@@ -54,7 +54,7 @@ header {
     background-color: var(--CianoMuitoPalido);     
     background-size: cover;
     background-repeat: no-repeat;
-    height: 75vh;    
+    height: 85vh;    
 }
 
 /* Flex containers em coluna*/
@@ -78,7 +78,7 @@ header nav,
 header nav {
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 2rem 0 2rem;
 }
 
 .logo {
@@ -101,7 +101,7 @@ nav button{
 
 
 .meioPagina {  
-    padding: 1rem;
+    padding: 2em;
     height: 70%;
     width: auto;
     justify-content: space-between;
@@ -112,17 +112,19 @@ nav button{
 .meioPagina h1{
     font-family: 'Poppins';
     font-weight: 600;
+    font-size: 25px;
 }
 
 .meioPagina section{
     justify-content: center; 
     border: green solid 1px;
-    width: 500px;
+    width: 460px;
+    text-align: justify;
 }
 
 .imagemTela img {    
     border: yellow solid 1px;  
-    height: 50vh;
+    height: 60vh;      
     justify-content: center;
     align-items: center;
     position: relative;    
@@ -132,38 +134,39 @@ nav button{
 .meioPagina section button {
     border: none;
     border-radius: 35px;
-    padding: 1.1rem 2rem;
-    width: 300px;
+    padding: 1rem 1rem;
+    width: 210px;
     background-color: var(--Rosa);
     color: white;    
     cursor: pointer;
     font-weight: 700;
     font-size: 0.9rem;
-    align-self: center;
+    align-self: left;
 }
 
 .destaques {
     gap: 3rem;
     align-items: center;
-    padding-top: 10rem;
-    padding-bottom: 13.9rem;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
     position: relative;
 }
 
 .bloco-destaque{
     background-color: var(--white);
-    box-shadow: var(--sombraCaixa);
-    padding: 1rem;
+    box-shadow: var(--sombraCaixa);    
     border-radius: 10px;
     text-align: center;
     width: 87%;
-    height: 70vh;
+    height: 45vh;
     margin: 0 auto;
     padding: 2.5rem 2rem;
     gap: 3rem;
 }
 
-.imagem-destaque {
-    height: fit-content;
+.imagem-destaque img {
+    height: 40vh;
     align-self: center;
+    justify-content: center;
+    
 }
